@@ -1,6 +1,6 @@
 package com.leandrodev.netflixremake.model
 
 data class Category(
-    val nome: String,
+    val name: String,
     val movies: List<Movie>
 )
