@@ -26,7 +26,7 @@ class MovieActivity : AppCompatActivity() {
         txtCast.text = getString(R.string.cast, "Ator A, Ator B, Atriz A, Atriz B")
 
         val movies = mutableListOf<Movie>()
-        for(i in 0 until 9) {
+        for(i in 0 until 20) {
             val movie = Movie(R.drawable.movie)
             movies.add(movie)
         }
@@ -44,6 +44,7 @@ class MovieActivity : AppCompatActivity() {
 
         //Habilitando a toolbar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = null
 
         //Buscando o desenhável LayerList
         val layerDrawable : LayerDrawable = ContextCompat.getDrawable(this, R.drawable.shadows) as LayerDrawable
