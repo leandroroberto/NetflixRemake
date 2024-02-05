@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
         val categories = mutableListOf<Category>()
         for (j in 0 until 5) {
-
             val movies = mutableListOf<Movie>()
             for(i in 0 until 5) {
                 val movie = Movie(R.drawable.movie)
